@@ -1,0 +1,1 @@
+from .sphinx_algolia_crawler import SphinxAlgoliaCrawler
