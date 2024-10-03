@@ -1,4 +1,4 @@
-# source/_extensions/sphinx_openapi/__init__.py
+# sphinx_openapi/__init__.py
 import argparse
 import os
 import requests
