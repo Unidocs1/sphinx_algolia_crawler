@@ -3,7 +3,7 @@ name = "sphinx_algolia_crawler"
 version = "1.0.1"
 description = "This Sphinx extension (that can also be run standalone) uses Algolia's v1 Crawler API."
 authors = ["Xsolla Backend <xbe@xsolla.com>"]
-license = "All Rights Reserved"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">=3.10"
