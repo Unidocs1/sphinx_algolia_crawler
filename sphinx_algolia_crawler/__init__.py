@@ -4,13 +4,18 @@ import os
 import requests
 from sphinx.application import Sphinx
 from .sphinx_algolia_crawler import SphinxAlgoliaCrawler
+import importlib.metadata
 
+# Dynamically fetch the version from pyproject.toml
+try:
+    __version__ = importlib.metadata.version("sphinx_algolia_crawler")
+except importlib.metadata.PackageNotFoundError:
+    __version__ = "0.0.0"
 
 # ENTRY POINT (Sphinx) >>
 def setup(app: Sphinx):
-    """
-    Entry point for the Sphinx extension.
-    """
+    print(f"[sphinx_algolia_crawler::setup] Extension loaded with version: {__version__}")
+    
     app.add_config_value("algolia_crawler_enabled", False, "env", [bool])
 
     def on_build_finished(app, exception):
@@ -34,6 +39,12 @@ def setup(app: Sphinx):
         crawler.run()
 
     app.connect("build-finished", on_build_finished, priority=800)
+
+    return {
+        "version": __version__,
+        "parallel_read_safe": True,
+        "parallel_write_safe": True,
+    }
 
 
 # ENTRY POINT (Standalone) >>
