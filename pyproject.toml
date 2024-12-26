@@ -2,7 +2,7 @@
 name = "sphinx_algolia_crawler"
 version = "1.0.4"
 description = "This Sphinx extension uses Algolia's v1 Crawler API - and may even be run standalone via CLI (without Sphinx)."
-authors = ["Xsolla Backend <xbe@xsolla.com>"]
+authors = ["Xsolla Backend <xbe@xsolla.com>", "Dylan Hunt <d.hunt@xsolla.com>"]
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
