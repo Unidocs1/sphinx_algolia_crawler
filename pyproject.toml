@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sphinx_algolia_crawler"
-version = "1.0.2"
+version = "1.0.3"
 description = "This Sphinx extension uses Algolia's v1 Crawler API - and may even be run standalone via CLI (without Sphinx)."
 authors = ["Xsolla Backend <xbe@xsolla.com>"]
 readme = "README.md"
