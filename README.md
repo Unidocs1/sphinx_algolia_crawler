@@ -1,5 +1,8 @@
 # Sphinx Extension: Sphinx Algolia Crawler
 
+<!-- Badges go here on the same line; PyPi doesn't support `\` or single-multi-line (it'll stack vertically) -->
+[![PyPI](https://img.shields.io/pypi/v/sphinx-algolia-crawler)](https://pypi.org/project/sphinx-algolia-crawler/) [![PyPI - License](https://img.shields.io/pypi/l/sphinx-algolia-crawler)](https://opensource.org/licenses/MIT)
+
 ## Description
 
 This Sphinx extension (that can also be run standalone) uses Algolia's v1 Crawler API 
