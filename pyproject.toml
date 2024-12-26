@@ -1,14 +1,13 @@
 [tool.poetry]
 name = "sphinx_algolia_crawler"
 version = "1.0.2"
-description = "This Sphinx extension (that can also be run standalone) uses Algolia's v1 Crawler API."
+description = "This Sphinx extension uses Algolia's v1 Crawler API - and may even be run standalone via CLI (without Sphinx)."
 authors = ["Xsolla Backend <xbe@xsolla.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">=3.10"
-sphinx = ">=7.3.7"  # Sphinx 8 support untested
-orjson = ">=3.10.7"
+sphinx = ">=7.3.7"  # Confirmed working in 8.1.3
 requests = ">=2.32.3"
 
 [build-system]
