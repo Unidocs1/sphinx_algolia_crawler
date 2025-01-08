@@ -21,7 +21,7 @@ def setup(app: Sphinx):
     def on_build_finished(app, exception):
         if not app.config.algolia_crawler_enabled:
             print(
-                f"\n[sphinx_algolia_crawler] Crawler not enabled in this env; skipping extension.\n"
+                f"\n[sphinx_algolia_crawler] !algolia_crawler_enabled; skipping extension.\n"
             )
             return
 
