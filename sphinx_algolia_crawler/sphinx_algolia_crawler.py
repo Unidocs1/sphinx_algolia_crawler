@@ -1,6 +1,7 @@
 """
 Xsolla Sphinx Extension: sphinx_algolia_crawler
 - See README for more info
+- Algolia API Doc | https://www.algolia.com/doc/rest-api/crawler/#section/Base-URL
 """
 
 import base64

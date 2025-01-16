@@ -26,13 +26,11 @@ In ReadTheDocs' env var dashboard, set:
 ### conf.py
 
 ```py
-import sys, os
-
-sys.path.append(os.path.abspath(os.path.join('_extensions', 'sphinx_algolia_crawler')))
 extensions = [ 'sphinx_algolia_crawler' ]
 
 # While this example merely turns it on, you probably want to check if RTD /latest production
-# See `xbe_docs` `conf.py` for examples of how we checked for this
+# See xbe_static_docs' [conf.py](https://source.goxbe.io/Core/docs/xbe_static_docs/-/blob/main/docs/source/conf.py) 
+# for examples of how we checked for this
 algolia_crawler_enabled = True
 ```
 
@@ -74,6 +72,7 @@ See `if is_standalone:` block.
 - Windows 11 via PowerShell 7
 - Ubuntu 22.04 WSL2 Shell
 - ReadTheDocs (RTD) CI Deployment (Ubuntu 22.04)
+- Sphinx 7.x
 
 ## Notes
 
